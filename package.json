@@ -2,9 +2,9 @@
   "name": "decoix",
   "version": "1.0.0",
   "description": "Scrapes a URL and stands up a local copy.",
-  "main": "index.js",
+  "main": "decoix.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "decoix": "echo \"Creating decoix...\" && node decoix.mjs"
   },
   "repository": {
     "type": "git",

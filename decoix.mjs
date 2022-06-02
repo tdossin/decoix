@@ -1,18 +1,8 @@
 // Handy Dandy Website Scraper
 
-const scrapeTarget = "/";
-// This is the URL you want to scrape
+const scrapeTarget = "/"; // This is the URL for the page you want to duplicate
 
-const scrapeToDirectory = "./_ORIG";
-// This is where the scraped files will be placed on your computer
-
-// Go to the scrapeToDirectory and initialize it as an npm project by typing
-// > npm init -y
-
-// Required: NodeJS/npm, 'website-scraper', 'live-server' packages
-
-// if you haven't done so, install the required packages
-// > npm i website-scraper live-server -g
+const scrapeToDirectory = "./_ORIG"; // This is the local folder for the website files
 
 import scrape from "website-scraper";
 import * as plugins from "website-scraper/plugins";
@@ -43,7 +33,7 @@ const serverParams = {
 
 console.warn("Scraping URL: " + scrapeTarget + "...");
 
-// with promise
+// create promise
 scrape(scrapeOptions).then((result) => {
   console.log("Scrape complete!");
   console.log("...");
