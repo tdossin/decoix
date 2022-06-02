@@ -3,6 +3,7 @@
 Scrapes a URL and stands up a local copy for development.
 
 `scrapeTarget` This is the URL for the page you want to duplicate
+<br>
 `scrapeToDirectory` This is the local folder for the website files
 
 Set both of these arguments in the script, then run it
