@@ -2,11 +2,12 @@
 
 Scrapes a URL and stands up a local copy for development.
 
-const scrapeTarget = "/"; // This is the URL for the page you want to duplicate
-const scrapeToDirectory = "./\_ORIG"; // This is the local folder for the website files
+`scrapeTarget` This is the URL for the page you want to duplicate
+`scrapeToDirectory` This is the local folder for the website files
 
-// Use Node to run the scraper script by typing
-// > node scraper.mjs
+Set both of these arguments in the script, then run it
+
+`node scraper.mjs`
 
 Notes:
 
