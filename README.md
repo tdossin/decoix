@@ -4,8 +4,9 @@ Scrapes a URL and stands up a local copy for development.
 
 <table>
 <tbody>
-<tr><td>`scrapeTarget`</td><td> The URL for the page you want to duplicate</td></tr>
-<tr><td>`scrapeToDirectory`</td><td>The local folder for the website files</td></tr>
+<tr><th>Variable</th><th>Purpose</th></tr>
+<tr><td>scrapeTarget</td><td> The URL for the page you want to duplicate</td></tr>
+<tr><td>scrapeToDirectory</td><td>The local folder for the website files</td></tr>
 </tbody>
 </table>
 
