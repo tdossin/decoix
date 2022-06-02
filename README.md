@@ -14,7 +14,7 @@ Set both of these arguments in the script, then run it
 
 `node scraper.mjs`
 
-Notes:
+Dev Notes:
 
 <ul>
   <li>Needs better file organization</li>
