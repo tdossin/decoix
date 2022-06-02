@@ -18,6 +18,7 @@
   "homepage": "https://github.com/tdossin/decoix#readme",
   "dependencies": {
     "live-server": "^1.2.2",
-    "website-scraper": "^5.0.0"
+    "website-scraper": "^5.0.0",
+    "website-scraper-puppeteer": "^1.0.0"
   }
 }
