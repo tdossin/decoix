@@ -1,22 +1,23 @@
-// Decoix
+// decoix
 
 import scrape from "website-scraper";
 import * as plugins from "website-scraper/plugins";
-//import PuppeteerPlugin from "website-scraper-puppeteer"; // not sure if we need this yet
+// import PuppeteerPlugin from "website-scraper-puppeteer"; // TODO: not sure if we need this yet
 import liveServer from "live-server";
-import path from "path";
 
-const scrapeTarget = "https://www.yale.edu/"; // URL for the page you want to duplicate
-const scrapeToDirectory = "./_ORIG_NOPLUGIN"; // Local folder for the website files
+const decoixTarget = "/"; // URL for the page you want to duplicate
+const decoixDirectory = "./_ORIG"; // Local folder for the website files
 const decoixHost = "127.0.0.2"; // Host to use for local website
 const decoixPort = "8888"; // Port to use for local website
 
-// Use Node to run the scraper script by typing
-// > node scraper.mjs
+// Install the required packages
+//> npm i
+// Declare your variables and run the script
+//> npm run decoix
 
 const scrapeOptions = {
-  urls: [scrapeTarget],
-  directory: scrapeToDirectory,
+  urls: [decoixTarget],
+  directory: decoixDirectory,
   recursive: false,
   maxRecursiveDepth: null,
   subdirectories: [
@@ -26,7 +27,7 @@ const scrapeOptions = {
     { directory: "js", extensions: [".js"] },
     { directory: "css", extensions: [".css"] },
     { directory: "fonts", extensions: [".woff", ".woff2", ".eot", ".ttf"] },
-    { directory: "orphans", extensions: ["."] },
+    { directory: "orphans", extensions: [".*"] },
   ],
   // plugins: [
   //   new PuppeteerPlugin({
@@ -51,7 +52,7 @@ scrape(scrapeOptions).then((result) => {
   console.log("Scrape complete!");
   console.log("...");
   console.warn(
-    "Serving directory '" + scrapeToDirectory + "' @",
+    "Serving directory '" + decoixDirectory + "' @",
     serverParams.host + ":" + serverParams.port
   );
   // start local server
