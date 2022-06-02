@@ -1,4 +1,4 @@
-// Decoix&copy;
+// Decoix
 
 import scrape from "website-scraper";
 import * as plugins from "website-scraper/plugins";
