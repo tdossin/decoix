@@ -2,9 +2,12 @@
 
 Scrapes a URL and stands up a local copy for development.
 
-`scrapeTarget` This is the URL for the page you want to duplicate
-<br>
-`scrapeToDirectory` This is the local folder for the website files
+<table>
+<tbody>
+<tr><td>`scrapeTarget`</td><td> The URL for the page you want to duplicate</td></tr>
+<tr><td>`scrapeToDirectory`</td><td>The local folder for the website files</td></tr>
+</tbody>
+</table>
 
 Set both of these arguments in the script, then run it
 
