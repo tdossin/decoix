@@ -1,0 +1,23 @@
+{
+  "name": "decoix",
+  "version": "1.0.0",
+  "description": "Scrapes a URL and stands up a local copy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdossin/decoix.git"
+  },
+  "author": "T Dossin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdossin/decoix/issues"
+  },
+  "homepage": "https://github.com/tdossin/decoix#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "website-scraper": "^5.0.0"
+  }
+}
