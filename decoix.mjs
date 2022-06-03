@@ -5,7 +5,7 @@ import * as plugins from "website-scraper/plugins";
 // import PuppeteerPlugin from "website-scraper-puppeteer"; // TODO: not sure if we need this yet
 import liveServer from "live-server";
 
-const decoixTarget = "/"; // URL for the page you want to duplicate
+const decoixTarget = "https://"; // URL for the page you want to duplicate
 const decoixDirectory = "./_ORIG"; // Local folder for the website files
 const decoixHost = "127.0.0.2"; // Host to use for local website
 const decoixPort = "8888"; // Port to use for local website
@@ -41,11 +41,11 @@ const scrapeOptions = {
 const serverParams = {
   host: decoixHost, // Set the address to use for the local server
   port: decoixPort, // Set the server port
-  root: scrapeToDirectory, // Set root directory that's being served
+  root: decoixDirectory, // Set root directory that's being served
   wait: 1000, // Waits for all changes, before reloading (ms)
 };
 
-console.warn("Scraping URL: " + scrapeTarget + "...");
+console.warn("Scraping URL: " + decoixTarget + "...");
 
 // create promise
 scrape(scrapeOptions).then((result) => {
