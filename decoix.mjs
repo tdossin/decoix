@@ -5,8 +5,9 @@ import * as plugins from "website-scraper/plugins";
 // import PuppeteerPlugin from "website-scraper-puppeteer"; // TODO: not sure if we need this yet
 import liveServer from "live-server";
 
-const decoixTarget = "https://"; // URL for the page you want to duplicate
-const decoixDirectory = "./_ORIG"; // Local folder for the website files
+const decoixTarget =
+  "https://www.pikespeak.edu/_training/degree-search-test.php"; // URL for the page you want to duplicate
+const decoixDirectory = "./_pikes_peak_157224"; // Local folder for the website files
 const decoixHost = "127.0.0.2"; // Host to use for local website
 const decoixPort = "8888"; // Port to use for local website
 
@@ -22,12 +23,16 @@ const scrapeOptions = {
   maxRecursiveDepth: null,
   subdirectories: [
     { directory: "", extensions: [".html", ".ico"] },
-    { directory: "img", extensions: [".jpg", ".png", ".svg", ".gif"] },
-    { directory: "vid", extensions: [".mp4"] },
-    { directory: "js", extensions: [".js"] },
-    { directory: "css", extensions: [".css"] },
-    { directory: "fonts", extensions: [".woff", ".woff2", ".eot", ".ttf"] },
-    { directory: "orphans", extensions: [".*"] },
+    {
+      directory: "_resources/images",
+      extensions: [".jpg", ".png", ".svg", ".gif", ".mp4"],
+    },
+    { directory: "_resources/js", extensions: [".js"] },
+    { directory: "_resources/css", extensions: [".css"] },
+    {
+      directory: "_resources/fonts",
+      extensions: [".woff", ".woff2", ".eot", ".ttf"],
+    },
   ],
   // plugins: [
   //   new PuppeteerPlugin({
